@@ -20,6 +20,7 @@ public class PrintWebService {
 			document.addPage(page);
 			PDFont font = PDType1Font.HELVETICA;
 			PDFont fontBold = PDType1Font.HELVETICA_BOLD;
+			PDFont smallObliqueFont = PDType1Font.COURIER_OBLIQUE;
 			PDPageContentStream contentStream = new PDPageContentStream(document, page);
 			
 			// Write content.
@@ -242,6 +243,288 @@ public class PrintWebService {
 			contentStream.setFont(font, 12);
 			contentStream.moveTextPositionByAmount( 330, 380 );
 			contentStream.drawString( "DERIZZP" );
+			contentStream.endText();
+			
+			contentStream.beginText();
+			contentStream.setFont(fontBold, 12);
+			contentStream.moveTextPositionByAmount( 0, 360 );
+			contentStream.drawString( "K" );
+			contentStream.endText();
+			
+			contentStream.beginText();
+			contentStream.setFont(fontBold, 12);
+			contentStream.moveTextPositionByAmount( 0, 340 );
+			contentStream.drawString( "P.1" );
+			contentStream.endText();
+			
+			contentStream.beginText();
+			contentStream.setFont(font, 12);
+			contentStream.moveTextPositionByAmount( 30, 340 );
+			contentStream.drawString( "0" );
+			contentStream.endText();
+			
+			contentStream.beginText();
+			contentStream.setFont(fontBold, 12);
+			contentStream.moveTextPositionByAmount( 100, 340 );
+			contentStream.drawString( "P.2" );
+			contentStream.endText();
+			
+			contentStream.beginText();
+			contentStream.setFont(font, 12);
+			contentStream.moveTextPositionByAmount( 130, 340 );
+			contentStream.drawString( "0" );
+			contentStream.endText();
+			
+			contentStream.beginText();
+			contentStream.setFont(fontBold, 12);
+			contentStream.moveTextPositionByAmount( 200, 340 );
+			contentStream.drawString( "P.3" );
+			contentStream.endText();
+			
+			contentStream.beginText();
+			contentStream.setFont(font, 12);
+			contentStream.moveTextPositionByAmount( 230, 340 );
+			contentStream.drawString( "ES" );
+			contentStream.endText();
+			
+			contentStream.beginText();
+			contentStream.setFont(fontBold, 12);
+			contentStream.moveTextPositionByAmount( 300, 340 );
+			contentStream.drawString( "P.6" );
+			contentStream.endText();
+			
+			contentStream.beginText();
+			contentStream.setFont(font, 12);
+			contentStream.moveTextPositionByAmount( 330, 340 );
+			contentStream.drawString( "128" );
+			contentStream.endText();
+			
+			contentStream.beginText();
+			contentStream.setFont(fontBold, 12);
+			contentStream.moveTextPositionByAmount( 0, 320 );
+			contentStream.drawString( "Q" );
+			contentStream.endText();
+			
+			contentStream.beginText();
+			contentStream.setFont(font, 12);
+			contentStream.moveTextPositionByAmount( 30, 320 );
+			contentStream.drawString( "0.00" );
+			contentStream.endText();
+			
+			contentStream.beginText();
+			contentStream.setFont(fontBold, 12);
+			contentStream.moveTextPositionByAmount( 100, 320 );
+			contentStream.drawString( "S.1" );
+			contentStream.endText();
+			
+			contentStream.beginText();
+			contentStream.setFont(font, 12);
+			contentStream.moveTextPositionByAmount( 130, 320 );
+			contentStream.drawString( "2" );
+			contentStream.endText();
+			
+			contentStream.beginText();
+			contentStream.setFont(fontBold, 12);
+			contentStream.moveTextPositionByAmount( 200, 320 );
+			contentStream.drawString( "S.2" );
+			contentStream.endText();
+			
+			contentStream.beginText();
+			contentStream.setFont(font, 12);
+			contentStream.moveTextPositionByAmount( 230, 320 );
+			contentStream.drawString( "0" );
+			contentStream.endText();
+			
+			contentStream.beginText();
+			contentStream.setFont(fontBold, 12);
+			contentStream.moveTextPositionByAmount( 300, 320 );
+			contentStream.drawString( "U.1" );
+			contentStream.endText();
+			
+			contentStream.beginText();
+			contentStream.setFont(font, 12);
+			contentStream.moveTextPositionByAmount( 330, 320 );
+			contentStream.drawString( "0" );
+			contentStream.endText();
+			
+			contentStream.beginText();
+			contentStream.setFont(fontBold, 12);
+			contentStream.moveTextPositionByAmount( 0, 300 );
+			contentStream.drawString( "U.2" );
+			contentStream.endText();
+			
+			contentStream.beginText();
+			contentStream.setFont(font, 12);
+			contentStream.moveTextPositionByAmount( 30, 300 );
+			contentStream.drawString( "0" );
+			contentStream.endText();
+			
+			contentStream.beginText();
+			contentStream.setFont(fontBold, 12);
+			contentStream.moveTextPositionByAmount( 100, 300 );
+			contentStream.drawString( "V.7" );
+			contentStream.endText();
+			
+			contentStream.beginText();
+			contentStream.setFont(font, 12);
+			contentStream.moveTextPositionByAmount( 130, 300 );
+			contentStream.drawString( "0" );
+			contentStream.endText();
+			
+			contentStream.beginText();
+			contentStream.setFont(fontBold, 12);
+			contentStream.moveTextPositionByAmount( 200, 300 );
+			contentStream.drawString( "V.9" );
+			contentStream.endText();
+			
+			contentStream.beginText();
+			contentStream.setFont(fontBold, 12);
+			contentStream.moveTextPositionByAmount( 0, 280 );
+			contentStream.drawString( "X.1" );
+			contentStream.endText();
+			
+			contentStream.beginText();
+			contentStream.setFont(font, 12);
+			contentStream.moveTextPositionByAmount( 30, 280 );
+			contentStream.drawString( "VISITE AVANT LE 10/10/2012" );
+			contentStream.endText();
+			
+			contentStream.beginText();
+			contentStream.setFont(fontBold, 12);
+			contentStream.moveTextPositionByAmount( 0, 260 );
+			contentStream.drawString( "Y.1" );
+			contentStream.endText();
+			
+			contentStream.beginText();
+			contentStream.setFont(font, 12);
+			contentStream.moveTextPositionByAmount( 30, 260 );
+			contentStream.drawString( "0" );
+			contentStream.endText();
+			
+			contentStream.beginText();
+			contentStream.setFont(fontBold, 12);
+			contentStream.moveTextPositionByAmount( 100, 260 );
+			contentStream.drawString( "Y.2" );
+			contentStream.endText();
+			
+			contentStream.beginText();
+			contentStream.setFont(smallObliqueFont, 10);
+			contentStream.moveTextPositionByAmount( 280, 260 );
+			contentStream.drawString( "Pour le ministre de l'intérieur et par la délégation," );
+			contentStream.endText();
+			
+			contentStream.beginText();
+			contentStream.setFont(font, 12);
+			contentStream.moveTextPositionByAmount( 130, 260 );
+			contentStream.drawString( "0" );
+			contentStream.endText();
+			
+			contentStream.beginText();
+			contentStream.setFont(fontBold, 12);
+			contentStream.moveTextPositionByAmount( 0, 240 );
+			contentStream.drawString( "Y.3" );
+			contentStream.endText();
+			
+			contentStream.beginText();
+			contentStream.setFont(font, 12);
+			contentStream.moveTextPositionByAmount( 30, 240 );
+			contentStream.drawString( "0" );
+			contentStream.endText();
+			
+			contentStream.beginText();
+			contentStream.setFont(fontBold, 12);
+			contentStream.moveTextPositionByAmount( 100, 240 );
+			contentStream.drawString( "Y.4" );
+			contentStream.endText();
+			
+			contentStream.beginText();
+			contentStream.setFont(smallObliqueFont, 10);
+			contentStream.moveTextPositionByAmount( 380, 250 );
+			contentStream.drawString( "la sous directrice de la circulation" );
+			contentStream.endText();
+			
+			contentStream.beginText();
+			contentStream.setFont(smallObliqueFont, 10);
+			contentStream.moveTextPositionByAmount( 430, 240 );
+			contentStream.drawString( "et de la sécurité routières" );
+			contentStream.endText();
+			
+			contentStream.beginText();
+			contentStream.setFont(font, 12);
+			contentStream.moveTextPositionByAmount( 130, 240 );
+			contentStream.drawString( "0" );
+			contentStream.endText();
+			
+			contentStream.beginText();
+			contentStream.setFont(fontBold, 12);
+			contentStream.moveTextPositionByAmount( 0, 220 );
+			contentStream.drawString( "Y.5" );
+			contentStream.endText();
+			
+			contentStream.beginText();
+			contentStream.setFont(font, 12);
+			contentStream.moveTextPositionByAmount( 30, 220 );
+			contentStream.drawString( "2.5" );
+			contentStream.endText();
+			
+			contentStream.beginText();
+			contentStream.setFont(fontBold, 12);
+			contentStream.moveTextPositionByAmount( 100, 220 );
+			contentStream.drawString( "Y.6" );
+			contentStream.endText();
+			
+			contentStream.beginText();
+			contentStream.setFont(font, 12);
+			contentStream.moveTextPositionByAmount( 130, 220 );
+			contentStream.drawString( "2.5" );
+			contentStream.endText();
+			
+			contentStream.beginText();
+			contentStream.setFont(fontBold, 12);
+			contentStream.moveTextPositionByAmount( 0, 180 );
+			contentStream.drawString( "H" );
+			contentStream.endText();
+			
+			contentStream.beginText();
+			contentStream.setFont(smallObliqueFont, 12);
+			contentStream.moveTextPositionByAmount( 470, 180 );
+			contentStream.drawString( "Jean MICHEL" );
+			contentStream.endText();
+			
+			contentStream.beginText();
+			contentStream.setFont(fontBold, 12);
+			contentStream.moveTextPositionByAmount( 0, 160 );
+			contentStream.drawString( "I" );
+			contentStream.endText();
+			
+			contentStream.beginText();
+			contentStream.setFont(font, 12);
+			contentStream.moveTextPositionByAmount( 30, 160 );
+			contentStream.drawString( "08/05/2000" );
+			contentStream.endText();
+			
+			contentStream.beginText();
+			contentStream.setFont(fontBold, 12);
+			contentStream.moveTextPositionByAmount( 0, 140 );
+			contentStream.drawString( "Z.1" );
+			contentStream.endText();
+			
+			contentStream.beginText();
+			contentStream.setFont(fontBold, 12);
+			contentStream.moveTextPositionByAmount( 0, 120 );
+			contentStream.drawString( "Z.2" );
+			contentStream.endText();
+			
+			contentStream.beginText();
+			contentStream.setFont(fontBold, 12);
+			contentStream.moveTextPositionByAmount( 0, 100 );
+			contentStream.drawString( "Z.3" );
+			contentStream.endText();
+			
+			contentStream.beginText();
+			contentStream.setFont(fontBold, 12);
+			contentStream.moveTextPositionByAmount( 0, 80 );
+			contentStream.drawString( "Z.4" );
 			contentStream.endText();
 			
 			// Close and save.
