@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client: localhost
--- Généré le: Mer 12 Septembre 2012 à 08:06
+-- Généré le: Ven 14 Septembre 2012 à 09:55
 -- Version du serveur: 5.5.24-log
 -- Version de PHP: 5.3.13
 
@@ -23,16 +23,48 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Structure de la table `pdf`
+-- Structure de la table `archive`
 --
 
-CREATE TABLE IF NOT EXISTS `pdf` (
-  `id` int(20) NOT NULL,
-  `immatriculation` varchar(10) COLLATE utf8_unicode_ci NOT NULL COMMENT 'no d''immatriculation du véhicule',
-  `date_imp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT 'date d''impression',
-  `date_gene` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' COMMENT 'date de génération du document',
-  `impression` tinyint(1) NOT NULL COMMENT 'statut de l''impression: 1=imprimé 0=non imprimé',
-  PRIMARY KEY (`immatriculation`)
+CREATE TABLE IF NOT EXISTS `archive` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `Nid` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+  `marque` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+  `label` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+  `version` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+  `genreNat` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+  `couleur` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+  `exploitation_agricole` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+  `dateCertif` date NOT NULL,
+  `date1erImmat` date NOT NULL,
+  `nom` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+  `prenom` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+  `addr` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`,`Nid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `en_attente`
+--
+
+CREATE TABLE IF NOT EXISTS `en_attente` (
+  `id` int(11) NOT NULL,
+  `Nid` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `marque` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+  `label` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+  `version` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `genreNat` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `couleur` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+  `exploitation_agricole` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+  `dateCertif` date NOT NULL,
+  `date1erImmat` date NOT NULL,
+  `nom` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+  `prenom` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+  `addr` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`,`Nid`),
+  KEY `Nid` (`Nid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
